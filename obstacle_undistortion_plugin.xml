@@ -1,0 +1,5 @@
+<library path="lib/libobstacle_layer_laser_undistortion">
+  <class name="obstacle_layer_laser_undistortion/ObstacleLayerLaserUndistortion" type="obstacle_layer_laser_undistortion::ObstacleLayerLaserUndistortion" base_class_type="costmap_2d::Layer">
+    <description>ObstacleLayer with undistortion for rotating lidars data.</description>
+  </class>
+</library>
