@@ -1,0 +1,11 @@
+obstacle_layer:
+  laser_scan:
+    data_type: LaserScan
+    topic: /scan
+    marking: true
+    clearing: true
+    min_obstacle_height: 0.05
+    max_obstacle_height: 0.2
+    inf_is_valid: true
+    lidar_rotating: true
+    lidar_rotation_direction: false

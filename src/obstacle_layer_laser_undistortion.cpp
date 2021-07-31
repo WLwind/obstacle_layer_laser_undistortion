@@ -245,7 +245,9 @@ void ObstacleLayerLaserUndistortion::laserScanValidInfCallback(const sensor_msgs
       }
   }
   else
-      projector_.projectLaser(message, cloud);
+  {
+    projector_.projectLaser(message, cloud);
+  }
 
   // buffer the point cloud
   buffer->lock();

@@ -142,7 +142,7 @@ public:
     return transformLaserScanToPointCloud_ (target_frame, cloud_out, scan_in, tf, -1.0, channel_options);
   }
 
-  template<typename... T>
+  template <typename... T>
   void transformLaserScanToPointCloud(T&&... args)
   {
       transformLaserScanToPointCloud_(std::forward<T>(args)...);
@@ -150,7 +150,7 @@ public:
 
   void setRotationDirection(const bool& dir)
   {
-      rotation_direction_=dir;
+      rotation_direction_ = dir;
   }
 
 protected:
@@ -227,10 +227,10 @@ private:
 
   //! Internal map of pointers to stored values
   std::map<std::string,boost::numeric::ublas::matrix<double>* > unit_vector_map_;
-  float angle_min_{0};
-  float angle_max_{0};
+  float angle_min_ { 0 };
+  float angle_max_ { 0 };
   Eigen::ArrayXXd co_sine_map_;
   boost::mutex guv_mutex_;
-  bool rotation_direction_{true};///true=anticlockwise,false=clockwise
+  bool rotation_direction_ { true }; //true=anticlockwise,false=clockwise
 };
 }//end namespace

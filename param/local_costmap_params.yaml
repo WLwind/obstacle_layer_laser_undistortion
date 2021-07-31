@@ -1,0 +1,9 @@
+global_costmap:
+
+  plugins:
+
+    - {name: static_layer,    type: "costmap_2d::StaticLayer"}
+
+    - {name: obstacle_layer,  type: "obstacle_layer_laser_undistortion/ObstacleLayerLaserUndistortion"}
+
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
